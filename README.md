@@ -1,5 +1,8 @@
 # Part 1
 
+![Screenshot 2025-03-04 142126](https://github.com/user-attachments/assets/f00c13a2-6d40-4e7d-8e19-01e3d834e615)
+
+
 I used the Curve Shape shown in Discussion. I made a Spline class that holds all the control
 points and each spline is made up of a bunch of Curve Shapes. I parse my commands.
 
@@ -9,6 +12,8 @@ points and each spline is made up of a bunch of Curve Shapes. I parse my command
 - 5: Done in Spline (68 - 154) and Curve Shape. Curve drawn in render_animation()
 
 # Part 2
+
+https://github.com/user-attachments/assets/ccb956a6-6ad0-4ed6-ac14-68bd6834487f
 
 I have a Spring and a Particle class in P2Classes.js. Particle has particle info like mass
 and net force, but it also has a particle transform that describes where it is. The Spring
@@ -29,7 +34,10 @@ Then for each of the particles, I do a time step worth of velocity and position 
 
 # Part 3
 
-Essentially just a combination of Part 1 and Part 2. Didn't really change much apart from the
+https://github.com/user-attachments/assets/e27c625e-8413-44eb-b4f8-ebeb8cb41341
+
+Essentially just a combination of Part 
+1 and Part 2. Didn't really change much apart from the
 fact that we are allowed to hardcode in our spline, springs, particles, etc. and any of the
 characteristics that came with each. Another difference was that with the top particle because
 technically it doesn't act like a regular particle in that it has no vertical force of gravity,
