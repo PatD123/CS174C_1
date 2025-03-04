@@ -2,10 +2,11 @@
 
 I used the Curve Shape shown in Discussion. I made a Spline class that holds all the control
 points and each spline is made up of a bunch of Curve Shapes. I parse my commands.
-1-4: Parse Command Function
-Arc_Length: Curve Shape
-Spline: Spline Class - Adding points, tangent scaling, etc.
-5: Done in Spline (68 - 154) and Curve Shape. Curve drawn in render_animation()
+
+- 1-4: Parse Command Function
+- Arc_Length: Curve Shape
+- Spline: Spline Class - Adding points, tangent scaling, etc.
+- 5: Done in Spline (68 - 154) and Curve Shape. Curve drawn in render_animation()
 
 # Part 2
 
@@ -15,17 +16,16 @@ class has all the spring info like ks and kd, but it also houses a Curve Shape t
 drawn as Curve Shape.
 
 I do 1000/30 updates I think instead of using 1/60 to get a faster, more realistic animation.
-I do updates per euler step. My verlet doesn't work but it should only be worth 2 points as
-stated in the spec.
+I do updates per symplectic euler step.
 
 On particle updates, I loop through all springs and recompute the forces on each of the particles.
 Then for each of the particles, I do a time step worth of velocity and position changes.
 
-1-8: All in parse commands to parse commands.
-Spring + Particle: Located in P2Classes.js.
-Integration: 181-196
-Force Updates: update_particles() - Collision detection + response are here as well.
-Animation runs in render_animation();
+- 1-8: All in parse commands to parse commands.
+- Spring + Particle: Located in P2Classes.js.
+- Integration: 181-196
+- Force Updates: update_particles() - Collision detection + response are here as well.
+- Animation runs in render_animation();
 
 # Part 3
 
@@ -119,4 +119,4 @@ I have a similar integration + update_particles.
 
 ### P3
 
-Just run it
+It runs automatically
